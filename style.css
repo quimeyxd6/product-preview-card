@@ -10,37 +10,43 @@
 
 body {
     background-color: var(--cream);
+    height: 100svh;
+    border: 1px solid green;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100svh;
-    border: 1px solid green;
 }
 
 .main-section {
+    background-color: var(--white);
     height: 500px;
     width: 600px;
     border-radius: 15px;
-    background-color: var(--white);
     display: flex;
     overflow: hidden;
     border: 2px solid blue;
 }
 
 .contain-img {
-   overflow: hidden;
-   border: 2px solid green;
+    width: 50%;
+    overflow: hidden;
+    
+    display: flex;
+    justify-content: center;
 }
 
 .img {
-    width: 50%;
-    border: 2px solid red;
+    height: 100%;
+    position: static;
 }
 
 .contain-info {
-    display: grid;
     width: 50%;
-    border: 2px solid yellow;
+    display: grid;
+}
+
+.info {
+    margin: 20px;
 }
 
 .attribution {
