@@ -29,7 +29,6 @@ body {
 .contain-img {
     width: 50%;
     overflow: hidden;
-    
     display: flex;
     justify-content: center;
 }
@@ -45,6 +44,37 @@ body {
 
 .info {
     margin: 30px;
+}
+
+.perfume {
+    font-family: var(--typografy2);
+    color: var(--dark-grayish-blue);
+    font-size: 14px;
+}
+
+.first-text {
+    font-family: var(--typografy1);
+    font-size: 22px;
+}
+
+.second-text, .total{
+    font-family: var(--typografy2);
+    color: var(--dark-grayish-blue); 
+    font-size: 16px;
+    line-height: 25px;
+}
+
+.price {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    
+}
+
+.offer {
+    font-family: var(--typografy1);
+    color: var(--dark); 
+    font-size: 35px;
 }
 
 .attribution {
