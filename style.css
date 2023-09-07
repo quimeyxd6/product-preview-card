@@ -87,6 +87,31 @@ body {
     margin: 30px;
 }
 
+.btn{
+    font-family: var(--typografy2);
+    background: #3d7f67;
+    height: 50px;
+    width: 200px;
+    border: 0px;
+    margin-top: 37px;
+    margin-left: 23px;
+    border-radius: 12px;
+    color: white;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn:hover{
+    
+    background: #07442d;    
+}
+
+.cart-logo{
+    margin: 5px;
+}
+
 .attribution {
     position: fixed;
     bottom: 0;
