@@ -8,34 +8,44 @@
     --typografy2: 'Montserrat', sans-serif;
 }
 
-html, body {
-    height:100%; 
-    margin:0;
-    padding:0;
+body {
     background-color: var(--cream);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100svh;
+    border: 1px solid green;
 }
 
-.container {
-    margin: 50px auto;
+.main-section {
+    height: 500px;
     width: 600px;
     border-radius: 15px;
     background-color: var(--white);
+    display: flex;
+    overflow: hidden;
+    border: 2px solid blue;
 }
 
-.div-contain {
-    display: grid;
-    grid-template-columns: repeat(2, 50%);
-    height: 100%;
+.contain-img {
+   overflow: hidden;
+   border: 2px solid green;
 }
 
 .img {
-    width: 100%;
-    height: 100%;
+    width: 50%;
+    border: 2px solid red;
 }
 
 .contain-info {
-    margin: 20px;
     display: grid;
+    width: 50%;
+    border: 2px solid yellow;
+}
+
+.attribution {
+    position: fixed;
+    bottom: 0;
 }
 
 /* Casi 5 horas de prueba y error, codeando de manera mediocre
