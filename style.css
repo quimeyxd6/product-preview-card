@@ -10,26 +10,23 @@
 
 body {
     background-color: var(--cream);
-    border: 1px solid green;
-
     height: 100svh;
-    
+    border: 1px solid green;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .main-section {
-    height: 400px;
+    background-color: var(--white);
+    height: 500px;
     width: 600px;
     border-radius: 15px;
-
-    background-color: var(--white);
-
     display: flex;
-    justify-content: center;
-
-    border: 2px solid blue;
+    overflow: hidden;
+}
+.solucion-quipeque{
+    width: 50%;
 }
 
 .contain-img {
@@ -41,15 +38,12 @@ body {
 }
 
 .img {
-    min-width: 100%;
-    object-fit: cover;
+    height: 100%;
 }
 
 .contain-info {
+    margin: 30px;
     width: 50%;
-
-    display: flex;
-    justify-content: space-between;
     
 }
 
@@ -86,14 +80,15 @@ body {
 
 .total {
     grid-column: 3;
-  grid-row: 3;
+    grid-row: 3;
     font-family: var(--typografy2);
     font-size: 12px;
     color: var(--dark-grayish-blue);
 }
 
-
-
+.info {
+    margin: 30px;
+}
 
 .attribution {
     position: fixed;
