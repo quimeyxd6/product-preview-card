@@ -1,11 +1,11 @@
 :root {
-    --dark :hsl(158, 36%, 37%);
+    --dark: hsl(158, 36%, 37%);
     --cream: hsl(30, 38%, 92%);
     --very-dark-blue: hsl(212, 21%, 14%);
     --dark-grayish-blue: hsl(228, 12%, 48%);
     --white: hsl(0, 0%, 100%);
-    --typografy1: 'Fraunces', serif;
-    --typografy2: 'Montserrat', sans-serif;
+    --typografy1: Fraunces, serif;
+    --typografy2: Montserrat, sans-serif;
 }
 
 body {
@@ -34,12 +34,10 @@ body {
 
 .contain-img {
     width: 50%;
+    overflow: hidden;
 
-   overflow: hidden;
-   border: 2px solid green;
-
-   display: flex;
-   justify-content: center;
+    display: flex;
+    justify-content: center;
 }
 
 .img {
@@ -48,13 +46,54 @@ body {
 }
 
 .contain-info {
+    width: 50%;
 
-
+    display: flex;
+    justify-content: space-between;
     
-    display: grid;
-    max-width: 50%;
-    padding: 3%;
 }
+
+.perfume {
+    color: var(--dark-grayish-blue);
+    font-family: var(--typografy2);
+}
+
+.firt-text {
+    font-size: 24px;
+    font-family: var(--typografy1);
+}
+
+.second-text {
+    color: var(--dark-grayish-blue);
+    font-family: var(--typografy2);
+    font-weight: 500;
+}
+
+.price{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.offer {
+    font-family: var(--typografy1);
+    font-size: 30px;
+    color: var(--dark);
+    width: 100%;
+    margin: 0px;
+    
+}
+
+.total {
+    grid-column: 3;
+  grid-row: 3;
+    font-family: var(--typografy2);
+    font-size: 12px;
+    color: var(--dark-grayish-blue);
+}
+
+
+
 
 .attribution {
     position: fixed;
@@ -68,5 +107,3 @@ body {
     manera horrible a la vista del desarrollo eficiente.
     Basicamente borre todo y empecé de vuelta xd
     Si hubiera sacado screen la adjuntaba asi veían el mamarracho*/
-
-
