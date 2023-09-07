@@ -24,6 +24,7 @@ body {
     border-radius: 15px;
     display: flex;
     overflow: hidden;
+    box-shadow: 0 4px 10px rgb(0, 0, 0, 0.2);
 }
 
 .contain-img {
