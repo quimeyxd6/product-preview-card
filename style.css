@@ -118,9 +118,30 @@ body {
     left: 3px;
 }
 
-/* Casi 5 horas de prueba y error, codeando de manera mediocre
-    y teninedo que investigar sobre el uso adecuado de flex y grid.
-    Estuve muy cerca de poder terminarlo pero estaba hecho de una 
-    manera horrible a la vista del desarrollo eficiente.
-    Basicamente borre todo y empecé de vuelta xd
-    Si hubiera sacado screen la adjuntaba asi veían el mamarracho*/
+@media (max-width: 500px){
+    body {
+        background-color: #222221;
+    } 
+    .main-section {
+        height: 800px;
+        width: 450px;
+        flex-direction: column;
+    }
+    .contain-img {
+        height: 35%;
+        width: 100%;
+    }
+    .img{
+        height: auto;
+        width: 100%;
+    }
+    .solucion-quipeque{
+        width: auto;
+    }
+
+
+
+
+
+
+}
