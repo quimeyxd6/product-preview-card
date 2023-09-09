@@ -6,6 +6,7 @@
     --white: hsl(0, 0%, 100%);
     --typografy1: Fraunces, serif;
     --typografy2: Montserrat, sans-serif;
+    --transitionTime: 1000ms
 }
 
 body {
@@ -21,11 +22,13 @@ body {
     background-color: var(--white);
     height: 500px;
     width: 600px;
+    max-width: 90%;
     border-radius: 15px;
     display: flex;
     overflow: hidden;
 }
-.solucion-quipeque{
+
+.solucion-quipeque {
     width: 50%;
 }
 
@@ -42,7 +45,7 @@ body {
 }
 
 .contain-info {
-    margin: 30px;    
+    margin: 30px;
 }
 
 .perfume {
@@ -61,7 +64,7 @@ body {
     font-weight: 500;
 }
 
-.price{
+.price {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -73,11 +76,11 @@ body {
     color: var(--dark);
     width: 100%;
     margin: 0px;
-    
+
 }
 
 .total {
-    margin-right: 10px;
+    margin-right: 50px;
     font-family: var(--typografy2);
     font-size: 12px;
     color: var(--dark-grayish-blue);
@@ -87,7 +90,7 @@ body {
     margin: 30px;
 }
 
-.btn{
+.btn {
     font-family: var(--typografy2);
     background: #3d7f67;
     height: 50px;
@@ -97,18 +100,18 @@ body {
     margin-left: 23px;
     border-radius: 12px;
     color: white;
-    
+
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.btn:hover{
-    
-    background: #07442d;    
+.btn:hover {
+
+    background: #07442d;
 }
 
-.cart-logo{
+.cart-logo {
     margin: 5px;
 }
 
@@ -118,28 +121,61 @@ body {
     left: 3px;
 }
 
-@media (max-width: 500px){
+@media (max-width: 375px) {
+
+    .attribution{
+        display: none;
+    }
+
     body {
+        transition: var(--transitionTime);
         background-color: #222221;
-    } 
+    }
+
     .main-section {
-        height: 800px;
-        width: 450px;
+        transition: var(--transitionTime);
+        height: 92%;
+        width: 92%;
         flex-direction: column;
     }
-    .contain-img {
-        display: flex;
-        height: 35%;
-        width: 100%;
-        object-fit: fill;
-        
+    h2{
+        transition: var(--transitionTime);
+        margin: 0px;
+        font-size: 29px;
     }
-    .img{
-        height: auto;
+
+    .contain-img {
+        transition: var(--transitionTime);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        height: 39%;
         width: 100%;
         object-fit: contain;
     }
-    .solucion-quipeque{
-        width: auto;
+
+    .img {
+        transition: var(--transitionTime);
+        height: auto;
+        width: 100%;
+        
+    }
+    .contain-info{
+        margin: 0px;
+        width: 77%;
+    }
+
+    .solucion-quipeque {
+        transition: var(--transitionTime);
+        max-height: 50%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .btn{
+    margin: 0px;
+    margin-top: 10px;
+    width: 100%;
     }
 }
