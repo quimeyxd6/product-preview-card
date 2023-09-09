@@ -96,16 +96,52 @@ button {
     border-radius: 10px;
 }
 
+button:active {
+    background-color: hsl(158, 38%, 24%);
+}
+
 .attribution {
     position: fixed;
     bottom: 0;
 }
 
-/* Casi 5 horas de prueba y error, codeando de manera mediocre
-    y teninedo que investigar sobre el uso adecuado de flex y grid.
-    Estuve muy cerca de poder terminarlo pero estaba hecho de una 
-    manera horrible a la vista del desarrollo eficiente.
-    Basicamente borre todo y empecé de vuelta xd
-    Si hubiera sacado screen la adjuntaba asi veían el mamarracho*/
+@media only screen and (max-width: 480px) {
+
+.main-section {
+    display: none;
+}
+
+body {
+    background-color: #111;
+    overflow: hidden;
+    
+}
+
+.mobile {
+    height: 600px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contain-img {
+    height: 40%;
+    width: 100%;
+
+}
+
+.contain-info {
+    height: 60%;
+    width: 100%;
+}
+
+.info {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    
+}
 
 
+
+}
