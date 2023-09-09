@@ -1,58 +1,178 @@
 :root {
-    --dark :hsl(158, 36%, 37%);
+    --dark: hsl(158, 36%, 37%);
     --cream: hsl(30, 38%, 92%);
     --very-dark-blue: hsl(212, 21%, 14%);
     --dark-grayish-blue: hsl(228, 12%, 48%);
     --white: hsl(0, 0%, 100%);
-    --typografy1: 'Fraunces', serif;
-    --typografy2: 'Montserrat', sans-serif;
+    --typografy1: Fraunces, serif;
+    --typografy2: Montserrat, sans-serif;
+    --transitionTime: 1000ms
 }
 
 body {
     background-color: var(--cream);
+    height: 100svh;
+    border: 1px solid green;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100svh;
-    border: 1px solid green;
 }
 
 .main-section {
+    background-color: var(--white);
     height: 500px;
     width: 600px;
+    max-width: 90%;
     border-radius: 15px;
-    background-color: var(--white);
     display: flex;
     overflow: hidden;
-    border: 2px solid blue;
+}
+
+.solucion-quipeque {
+    width: 50%;
 }
 
 .contain-img {
-   overflow: hidden;
-   border: 2px solid green;
+    width: 50%;
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
 }
 
 .img {
-    width: 50%;
-    border: 2px solid red;
+    height: 100%;
 }
 
 .contain-info {
-    display: grid;
-    width: 50%;
-    border: 2px solid yellow;
+    margin: 30px;
+}
+
+.perfume {
+    color: var(--dark-grayish-blue);
+    font-family: var(--typografy2);
+}
+
+.firt-text {
+    font-size: 24px;
+    font-family: var(--typografy1);
+}
+
+.second-text {
+    color: var(--dark-grayish-blue);
+    font-family: var(--typografy2);
+    font-weight: 500;
+}
+
+.price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.offer {
+    font-family: var(--typografy1);
+    font-size: 40px;
+    color: var(--dark);
+    width: 100%;
+    margin: 0px;
+
+}
+
+.total {
+    margin-right: 50px;
+    font-family: var(--typografy2);
+    font-size: 12px;
+    color: var(--dark-grayish-blue);
+}
+
+.info {
+    margin: 30px;
+}
+
+.btn {
+    font-family: var(--typografy2);
+    background: #3d7f67;
+    height: 50px;
+    width: 200px;
+    border: 0px;
+    margin-top: 37px;
+    margin-left: 23px;
+    border-radius: 12px;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn:hover {
+
+    background: #07442d;
+}
+
+.cart-logo {
+    margin: 5px;
 }
 
 .attribution {
     position: fixed;
     bottom: 0;
+    left: 3px;
 }
 
-/* Casi 5 horas de prueba y error, codeando de manera mediocre
-    y teninedo que investigar sobre el uso adecuado de flex y grid.
-    Estuve muy cerca de poder terminarlo pero estaba hecho de una 
-    manera horrible a la vista del desarrollo eficiente.
-    Basicamente borre todo y empecé de vuelta xd
-    Si hubiera sacado screen la adjuntaba asi veían el mamarracho*/
+@media (max-width: 375px) {
+
+    .attribution{
+        display: none;
+    }
 
 
+    .main-section {
+        transition: var(--transitionTime);
+        height: 92%;
+        width: 92%;
+        flex-direction: column;
+    }
+    h2{
+        transition: var(--transitionTime);
+        margin: 0px;
+        font-size: 29px;
+    }
+
+    .contain-img {
+        transition: var(--transitionTime);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        height: 39%;
+        width: 100%;
+        object-fit: contain;
+    }
+
+    .img {
+        transition: var(--transitionTime);
+        height: auto;
+        width: 100%;
+        transform: translate(0px, 40px);
+        
+    }
+    .contain-info{
+        margin: 0px;
+        width: 77%;
+    }
+
+    .solucion-quipeque {
+        transition: var(--transitionTime);
+        max-height: 50%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .btn{
+    margin: 0px;
+    margin-top: 10px;
+    width: 100%;
+    }
+}
