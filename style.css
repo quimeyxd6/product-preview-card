@@ -128,20 +128,18 @@ body {
         flex-direction: column;
     }
     .contain-img {
+        display: flex;
         height: 35%;
         width: 100%;
+        object-fit: fill;
+        
     }
     .img{
         height: auto;
         width: 100%;
+        object-fit: contain;
     }
     .solucion-quipeque{
         width: auto;
     }
-
-
-
-
-
-
 }
