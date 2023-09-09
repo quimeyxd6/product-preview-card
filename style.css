@@ -10,37 +10,94 @@
 
 body {
     background-color: var(--cream);
+    height: 100svh;
+    border: 1px solid green;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100svh;
-    border: 1px solid green;
 }
 
 .main-section {
+    background-color: var(--white);
     height: 500px;
     width: 600px;
     border-radius: 15px;
-    background-color: var(--white);
     display: flex;
     overflow: hidden;
-    border: 2px solid blue;
+    box-shadow: 0 4px 10px rgb(0, 0, 0, 0.2);
 }
 
 .contain-img {
-   overflow: hidden;
-   border: 2px solid green;
+    width: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
 }
 
 .img {
-    width: 50%;
-    border: 2px solid red;
+    height: 100%;
 }
 
 .contain-info {
-    display: grid;
     width: 50%;
-    border: 2px solid yellow;
+    display: grid;
+}
+
+.info {
+    margin: 30px;
+}
+
+.perfume {
+    font-family: var(--typografy2);
+    color: var(--dark-grayish-blue);
+    font-size: 14px;
+}
+
+.first-text {
+    font-family: var(--typografy1);
+    font-size: 22px;
+}
+
+.second-text, .total{
+    font-family: var(--typografy2);
+    color: var(--dark-grayish-blue); 
+    font-size: 15px;
+    line-height: 25px;
+}
+
+.price {
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.offer {
+    font-family: var(--typografy1);
+    color: var(--dark); 
+    font-size: 35px;
+}
+
+.total {
+    margin-left: 20px;
+}
+
+.btn{
+    height: 50px;
+    margin-top: 20px;
+}
+
+button {
+    border: none;
+    background-color: var(--dark);
+    color: var(--white);
+    font-family: var(--typografy2);
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+button:active {
+    background-color: hsl(158, 38%, 24%);
 }
 
 .attribution {
@@ -48,11 +105,52 @@ body {
     bottom: 0;
 }
 
-/* Casi 5 horas de prueba y error, codeando de manera mediocre
-    y teninedo que investigar sobre el uso adecuado de flex y grid.
-    Estuve muy cerca de poder terminarlo pero estaba hecho de una 
-    manera horrible a la vista del desarrollo eficiente.
-    Basicamente borre todo y empecé de vuelta xd
-    Si hubiera sacado screen la adjuntaba asi veían el mamarracho*/
+@media only screen and (max-width: 480px) {
 
+body {
+    font-size: 14px;
+}
 
+.mobile {
+    height: 90%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contain-img {
+    height: 38%;
+    width: 100%;
+}
+
+.img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.contain-info {
+    height: 62%;
+    width: 100%;
+}
+
+.info {
+    width: 85%;
+    display: grid;
+    line-height: 27px;
+    margin: 20px 25px;
+}
+
+p, h2, .btn{
+    margin: 0;
+}
+
+.first-text{
+    font-size: 20px;
+}
+
+.price {
+    width: 90%;
+    margin: 11px 0;
+}
+}
