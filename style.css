@@ -127,10 +127,6 @@ body {
         display: none;
     }
 
-    body {
-        transition: var(--transitionTime);
-        background-color: #222221;
-    }
 
     .main-section {
         transition: var(--transitionTime);
@@ -159,6 +155,7 @@ body {
         transition: var(--transitionTime);
         height: auto;
         width: 100%;
+        transform: translate(0px, 40px);
         
     }
     .contain-info{
